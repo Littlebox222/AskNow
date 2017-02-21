@@ -13,6 +13,7 @@
 		505D544C1E5AEA6C004D24CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505D544B1E5AEA6C004D24CF /* Assets.xcassets */; };
 		505D544F1E5AEA6C004D24CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505D544D1E5AEA6C004D24CF /* LaunchScreen.storyboard */; };
 		505D545D1E5AEC57004D24CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505D545C1E5AEC57004D24CF /* UIKit.framework */; };
+		505D54611E5AEDE5004D24CF /* ANNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505D54601E5AEDE5004D24CF /* ANNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,8 @@
 		505D544E1E5AEA6C004D24CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		505D54501E5AEA6C004D24CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		505D545C1E5AEC57004D24CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		505D545F1E5AEDE5004D24CF /* ANNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANNavigationController.h; sourceTree = "<group>"; };
+		505D54601E5AEDE5004D24CF /* ANNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,7 @@
 		505D54571E5AEC2A004D24CF /* Client */ = {
 			isa = PBXGroup;
 			children = (
+				505D545E1E5AED57004D24CF /* Chat */,
 			);
 			path = Client;
 			sourceTree = "<group>";
@@ -124,6 +128,15 @@
 				505D545C1E5AEC57004D24CF /* UIKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		505D545E1E5AED57004D24CF /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				505D545F1E5AEDE5004D24CF /* ANNavigationController.h */,
+				505D54601E5AEDE5004D24CF /* ANNavigationController.m */,
+			);
+			path = Chat;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				505D54611E5AEDE5004D24CF /* ANNavigationController.m in Sources */,
 				505D54441E5AEA6C004D24CF /* AppDelegate.m in Sources */,
 				505D54411E5AEA6C004D24CF /* main.m in Sources */,
 			);
