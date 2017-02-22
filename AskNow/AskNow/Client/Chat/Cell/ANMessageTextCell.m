@@ -7,6 +7,7 @@
 //
 
 #import "ANMessageTextCell.h"
+#import "ANConfig.h"
 
 //Label的约束
 #define LABEL_BUBBLE_LEFT 12
@@ -17,7 +18,7 @@
 #define CONTENT_MIN_WIDTH  53
 #define CONTENT_MIN_HEIGHT 41
 
-#define PREFERRED_MAX_TEXT_WIDTH [UIScreen mainScreen].bounds.size.width * 0.8
+#define PREFERRED_MAX_TEXT_WIDTH SIZE_SCREEN_WIDTH * 0.8
 
 @implementation ANMessageTextCell
 
@@ -34,7 +35,7 @@
         self.contentLabel.selectable = NO;
         self.contentLabel.textContainerInset = UIEdgeInsetsZero;
         self.contentLabel.textContainer.lineFragmentPadding = 0;
-        self.contentLabel.font = [UIFont systemFontOfSize:16];
+        self.contentLabel.font = [UIFont systemFontOfSize:SIZE_DEMO_CHAT_FONT];
         self.contentLabel.textAlignment = NSTextAlignmentLeft;
         self.contentLabel.backgroundColor = [UIColor clearColor];
         self.contentLabel.translatesAutoresizingMaskIntoConstraints = NO;
@@ -86,7 +87,7 @@
     
     if (!isFromMuMu) {
         
-        CGRect frame = CGRectMake([UIScreen mainScreen].bounds.size.width - (size.width + BUBBLE_LEFT_BLANK + BUBBLE_RIGHT_BLANK) - 3,
+        CGRect frame = CGRectMake(SIZE_SCREEN_WIDTH - (size.width + BUBBLE_LEFT_BLANK + BUBBLE_RIGHT_BLANK) - 3,
                                   CONTENT_SUPER_TOP - BUBBLE_TOP_BLANK,
                                   size.width + BUBBLE_LEFT_BLANK + BUBBLE_RIGHT_BLANK,
                                   size.height + BUBBLE_TOP_BLANK + BUBBLE_BOTTOM_BLANK);
@@ -96,16 +97,19 @@
         
         self.contentLabel.frame = CGRectMake(CGRectGetMinX(self.bubbleImageView.frame) + LABEL_BUBBLE_RIGHT + BUBBLE_LEFT_BLANK,
                                              CGRectGetMinY(self.bubbleImageView.frame) + LABEL_BUBBLE_TOP + BUBBLE_TOP_BLANK,
-                                             textSize.width, textSize.height);
+                                             textSize.width,
+                                             textSize.height);
         
     }else {
         self.bubbleImageView.frame = CGRectMake(CONTENT_LEFT_MARGIN,
-                                            CONTENT_SUPER_TOP - BUBBLE_TOP_BLANK, size.width + BUBBLE_LEFT_BLANK + BUBBLE_RIGHT_BLANK, size.height +
-                                            BUBBLE_TOP_BLANK + BUBBLE_BOTTOM_BLANK);
+                                                CONTENT_SUPER_TOP - BUBBLE_TOP_BLANK,
+                                                size.width + BUBBLE_LEFT_BLANK + BUBBLE_RIGHT_BLANK,
+                                                size.height + BUBBLE_TOP_BLANK + BUBBLE_BOTTOM_BLANK);
         
         self.contentLabel.frame = CGRectMake(CGRectGetMinX(self.bubbleImageView.frame) + LABEL_BUBBLE_LEFT + BUBBLE_LEFT_BLANK,
                                              CGRectGetMinY(self.bubbleImageView.frame) + LABEL_BUBBLE_TOP + BUBBLE_TOP_BLANK,
-                                             textSize.width, textSize.height);
+                                             textSize.width,
+                                             textSize.height);
     }
     
 }

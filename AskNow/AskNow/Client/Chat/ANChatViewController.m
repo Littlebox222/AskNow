@@ -11,8 +11,6 @@
 #import "ANConfig.h"
 #import "ANMessageTextCell.h"
 
-#define DEMO_DATA_COUNT 100
-
 @interface ANChatViewController () <UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -27,13 +25,14 @@
     
     self.title = @"散木问问";
     
-    [self.navigationController.navigationBar setBarTintColor: UIColorHexRGB(@"#0099FF")];
-    [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18],NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    [self.navigationController.navigationBar setBarTintColor: COLOR_NV_BACKGROUND];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:SIZE_NV_TITLE_FONT],NSForegroundColorAttributeName:[UIColor whiteColor]}];
     [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
     
     [self initDemoData];
     
-    self.tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
+    CGRect tableViewFrame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 64);
+    self.tableView = [[UITableView alloc] initWithFrame:tableViewFrame style:UITableViewStylePlain];
     self.tableView.backgroundColor = COLOR_VC_BACKGROUND;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;

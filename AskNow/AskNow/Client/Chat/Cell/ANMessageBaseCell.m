@@ -35,7 +35,7 @@
     if (!messageModel.isFromMuMu) {
         self.bubbleImageView.image = [[UIImage imageNamed:@"user_bubble_bg"] resizableImage];
     }else {
-        self.bubbleImageView.image = [[UIImage imageNamed:@"user_bubble_bg"] resizableImage];
+        self.bubbleImageView.image = [[UIImage imageNamed:@"mumu_bubble_bg"] resizableImage];
     }
     
     [self layoutMessageContentViews:messageModel.isFromMuMu];

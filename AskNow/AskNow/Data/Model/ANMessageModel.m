@@ -9,6 +9,7 @@
 #import "ANMessageModel.h"
 
 #import "ANMessageTextCell.h"
+#import "ANConfig.h"
 
 @implementation ANMessageModel
 
@@ -21,7 +22,7 @@
         self.text = string;
         
         NSDictionary *ats = @{
-                              NSFontAttributeName : [UIFont systemFontOfSize:16.0f],
+                              NSFontAttributeName : [UIFont systemFontOfSize:SIZE_DEMO_CHAT_FONT],
                               };
         
         self.attributedText = [[NSMutableAttributedString alloc] initWithString:string attributes:ats];
