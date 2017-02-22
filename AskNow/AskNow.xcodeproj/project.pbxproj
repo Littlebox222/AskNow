@@ -7,16 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5024BD381E5BF9780033F65B /* ANMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5024BD371E5BF9780033F65B /* ANMainViewController.m */; };
+		5024BD3C1E5BFCF90033F65B /* ANNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5024BD3B1E5BFCF90033F65B /* ANNavigationController.m */; };
+		5024BD3F1E5BFD280033F65B /* ANViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5024BD3E1E5BFD280033F65B /* ANViewController.m */; };
+		5024BD421E5C28D20033F65B /* ANChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5024BD411E5C28D20033F65B /* ANChatViewController.m */; };
+		5024BD481E5C591A0033F65B /* ANChatInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5024BD471E5C591A0033F65B /* ANChatInputView.m */; };
 		505D54411E5AEA6C004D24CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 505D54401E5AEA6C004D24CF /* main.m */; };
 		505D54441E5AEA6C004D24CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 505D54431E5AEA6C004D24CF /* AppDelegate.m */; };
 		505D544A1E5AEA6C004D24CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505D54481E5AEA6C004D24CF /* Main.storyboard */; };
 		505D544C1E5AEA6C004D24CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505D544B1E5AEA6C004D24CF /* Assets.xcassets */; };
 		505D544F1E5AEA6C004D24CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505D544D1E5AEA6C004D24CF /* LaunchScreen.storyboard */; };
 		505D545D1E5AEC57004D24CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505D545C1E5AEC57004D24CF /* UIKit.framework */; };
-		505D54611E5AEDE5004D24CF /* ANNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505D54601E5AEDE5004D24CF /* ANNavigationController.m */; };
+		50FB32231E5DE8E900219425 /* UIColor+ANExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FB32221E5DE8E900219425 /* UIColor+ANExt.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5024BD361E5BF9780033F65B /* ANMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANMainViewController.h; sourceTree = "<group>"; };
+		5024BD371E5BF9780033F65B /* ANMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANMainViewController.m; sourceTree = "<group>"; };
+		5024BD3A1E5BFCF90033F65B /* ANNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANNavigationController.h; sourceTree = "<group>"; };
+		5024BD3B1E5BFCF90033F65B /* ANNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANNavigationController.m; sourceTree = "<group>"; };
+		5024BD3D1E5BFD280033F65B /* ANViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANViewController.h; sourceTree = "<group>"; };
+		5024BD3E1E5BFD280033F65B /* ANViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANViewController.m; sourceTree = "<group>"; };
+		5024BD401E5C28D20033F65B /* ANChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANChatViewController.h; sourceTree = "<group>"; };
+		5024BD411E5C28D20033F65B /* ANChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANChatViewController.m; sourceTree = "<group>"; };
+		5024BD441E5C3ED20033F65B /* ANConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANConfig.h; sourceTree = "<group>"; };
+		5024BD461E5C591A0033F65B /* ANChatInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANChatInputView.h; sourceTree = "<group>"; };
+		5024BD471E5C591A0033F65B /* ANChatInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANChatInputView.m; sourceTree = "<group>"; };
 		505D543C1E5AEA6C004D24CF /* AskNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AskNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		505D54401E5AEA6C004D24CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		505D54421E5AEA6C004D24CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,8 +42,8 @@
 		505D544E1E5AEA6C004D24CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		505D54501E5AEA6C004D24CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		505D545C1E5AEC57004D24CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		505D545F1E5AEDE5004D24CF /* ANNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANNavigationController.h; sourceTree = "<group>"; };
-		505D54601E5AEDE5004D24CF /* ANNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANNavigationController.m; sourceTree = "<group>"; };
+		50FB32211E5DE8E900219425 /* UIColor+ANExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ANExt.h"; sourceTree = "<group>"; };
+		50FB32221E5DE8E900219425 /* UIColor+ANExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ANExt.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +58,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5024BD391E5BFCF90033F65B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5024BD3A1E5BFCF90033F65B /* ANNavigationController.h */,
+				5024BD3B1E5BFCF90033F65B /* ANNavigationController.m */,
+				5024BD3D1E5BFD280033F65B /* ANViewController.h */,
+				5024BD3E1E5BFD280033F65B /* ANViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5024BD431E5C3EC30033F65B /* General */ = {
+			isa = PBXGroup;
+			children = (
+				50FB321F1E5DE89200219425 /* Utility */,
+				5024BD441E5C3ED20033F65B /* ANConfig.h */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		5024BD451E5C58EE0033F65B /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				5024BD461E5C591A0033F65B /* ANChatInputView.h */,
+				5024BD471E5C591A0033F65B /* ANChatInputView.m */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
 		505D54331E5AEA6B004D24CF = {
 			isa = PBXGroup;
 			children = (
@@ -62,7 +107,7 @@
 		505D543E1E5AEA6C004D24CF /* AskNow */ = {
 			isa = PBXGroup;
 			children = (
-				505D54591E5AEC2A004D24CF /* General */,
+				5024BD431E5C3EC30033F65B /* General */,
 				505D545A1E5AEC2A004D24CF /* Server */,
 				505D54581E5AEC2A004D24CF /* Data */,
 				505D54571E5AEC2A004D24CF /* Client */,
@@ -96,6 +141,8 @@
 		505D54571E5AEC2A004D24CF /* Client */ = {
 			isa = PBXGroup;
 			children = (
+				5024BD361E5BF9780033F65B /* ANMainViewController.h */,
+				5024BD371E5BF9780033F65B /* ANMainViewController.m */,
 				505D545E1E5AED57004D24CF /* Chat */,
 			);
 			path = Client;
@@ -106,13 +153,6 @@
 			children = (
 			);
 			path = Data;
-			sourceTree = "<group>";
-		};
-		505D54591E5AEC2A004D24CF /* General */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = General;
 			sourceTree = "<group>";
 		};
 		505D545A1E5AEC2A004D24CF /* Server */ = {
@@ -133,10 +173,29 @@
 		505D545E1E5AED57004D24CF /* Chat */ = {
 			isa = PBXGroup;
 			children = (
-				505D545F1E5AEDE5004D24CF /* ANNavigationController.h */,
-				505D54601E5AEDE5004D24CF /* ANNavigationController.m */,
+				5024BD401E5C28D20033F65B /* ANChatViewController.h */,
+				5024BD411E5C28D20033F65B /* ANChatViewController.m */,
+				5024BD391E5BFCF90033F65B /* Base */,
+				5024BD451E5C58EE0033F65B /* Input */,
 			);
 			path = Chat;
+			sourceTree = "<group>";
+		};
+		50FB321F1E5DE89200219425 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				50FB32201E5DE8AA00219425 /* Category */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		50FB32201E5DE8AA00219425 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				50FB32211E5DE8E900219425 /* UIColor+ANExt.h */,
+				50FB32221E5DE8E900219425 /* UIColor+ANExt.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,9 +270,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				505D54611E5AEDE5004D24CF /* ANNavigationController.m in Sources */,
+				5024BD3C1E5BFCF90033F65B /* ANNavigationController.m in Sources */,
+				5024BD421E5C28D20033F65B /* ANChatViewController.m in Sources */,
+				50FB32231E5DE8E900219425 /* UIColor+ANExt.m in Sources */,
+				5024BD381E5BF9780033F65B /* ANMainViewController.m in Sources */,
+				5024BD481E5C591A0033F65B /* ANChatInputView.m in Sources */,
 				505D54441E5AEA6C004D24CF /* AppDelegate.m in Sources */,
 				505D54411E5AEA6C004D24CF /* main.m in Sources */,
+				5024BD3F1E5BFD280033F65B /* ANViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +434,7 @@
 				505D54551E5AEA6C004D24CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
