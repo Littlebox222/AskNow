@@ -10,8 +10,7 @@
 
 @interface UIColor (ANExt)
 
-#define UIColorRGBA(_red, _green, _blue, _alpha) [UIColor colorWithRed:((_red)/255.0) \
-green:((_green)/255.0) blue:((_blue)/255.0) alpha:(_alpha)]
+#define UIColorRGBA(_red, _green, _blue, _alpha) [UIColor colorWithRed:((_red)/255.0) green:((_green)/255.0) blue:((_blue)/255.0) alpha:(_alpha)]
 
 #define UIColorRGB(red, green, blue) UIColorRGBA(red, green, blue, 1)
 
