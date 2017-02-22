@@ -19,6 +19,10 @@
 		505D544F1E5AEA6C004D24CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505D544D1E5AEA6C004D24CF /* LaunchScreen.storyboard */; };
 		505D545D1E5AEC57004D24CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505D545C1E5AEC57004D24CF /* UIKit.framework */; };
 		50FB32231E5DE8E900219425 /* UIColor+ANExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FB32221E5DE8E900219425 /* UIColor+ANExt.m */; };
+		50FB32271E5DF8B900219425 /* ANMessageBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FB32261E5DF8B900219425 /* ANMessageBaseCell.m */; };
+		50FB322A1E5DFADF00219425 /* ANMessageTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FB32291E5DFADF00219425 /* ANMessageTextCell.m */; };
+		50FB322F1E5DFB3C00219425 /* ANMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FB322E1E5DFB3C00219425 /* ANMessageModel.m */; };
+		50FB32321E5E21D200219425 /* UIImage+ANExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FB32311E5E21D200219425 /* UIImage+ANExt.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,14 @@
 		505D545C1E5AEC57004D24CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		50FB32211E5DE8E900219425 /* UIColor+ANExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ANExt.h"; sourceTree = "<group>"; };
 		50FB32221E5DE8E900219425 /* UIColor+ANExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ANExt.m"; sourceTree = "<group>"; };
+		50FB32251E5DF8B900219425 /* ANMessageBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANMessageBaseCell.h; sourceTree = "<group>"; };
+		50FB32261E5DF8B900219425 /* ANMessageBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANMessageBaseCell.m; sourceTree = "<group>"; };
+		50FB32281E5DFADF00219425 /* ANMessageTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANMessageTextCell.h; sourceTree = "<group>"; };
+		50FB32291E5DFADF00219425 /* ANMessageTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANMessageTextCell.m; sourceTree = "<group>"; };
+		50FB322D1E5DFB3C00219425 /* ANMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANMessageModel.h; sourceTree = "<group>"; };
+		50FB322E1E5DFB3C00219425 /* ANMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANMessageModel.m; sourceTree = "<group>"; };
+		50FB32301E5E21D200219425 /* UIImage+ANExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ANExt.h"; sourceTree = "<group>"; };
+		50FB32311E5E21D200219425 /* UIImage+ANExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ANExt.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +121,7 @@
 			children = (
 				5024BD431E5C3EC30033F65B /* General */,
 				505D545A1E5AEC2A004D24CF /* Server */,
-				505D54581E5AEC2A004D24CF /* Data */,
+				50FB322B1E5DFB0D00219425 /* Data */,
 				505D54571E5AEC2A004D24CF /* Client */,
 				505D54421E5AEA6C004D24CF /* AppDelegate.h */,
 				505D54431E5AEA6C004D24CF /* AppDelegate.m */,
@@ -148,13 +160,6 @@
 			path = Client;
 			sourceTree = "<group>";
 		};
-		505D54581E5AEC2A004D24CF /* Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
 		505D545A1E5AEC2A004D24CF /* Server */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +181,7 @@
 				5024BD401E5C28D20033F65B /* ANChatViewController.h */,
 				5024BD411E5C28D20033F65B /* ANChatViewController.m */,
 				5024BD391E5BFCF90033F65B /* Base */,
+				50FB32241E5DF7C500219425 /* Cell */,
 				5024BD451E5C58EE0033F65B /* Input */,
 			);
 			path = Chat;
@@ -194,8 +200,38 @@
 			children = (
 				50FB32211E5DE8E900219425 /* UIColor+ANExt.h */,
 				50FB32221E5DE8E900219425 /* UIColor+ANExt.m */,
+				50FB32301E5E21D200219425 /* UIImage+ANExt.h */,
+				50FB32311E5E21D200219425 /* UIImage+ANExt.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		50FB32241E5DF7C500219425 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				50FB32251E5DF8B900219425 /* ANMessageBaseCell.h */,
+				50FB32261E5DF8B900219425 /* ANMessageBaseCell.m */,
+				50FB32281E5DFADF00219425 /* ANMessageTextCell.h */,
+				50FB32291E5DFADF00219425 /* ANMessageTextCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		50FB322B1E5DFB0D00219425 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				50FB322C1E5DFB2500219425 /* Model */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		50FB322C1E5DFB2500219425 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				50FB322D1E5DFB3C00219425 /* ANMessageModel.h */,
+				50FB322E1E5DFB3C00219425 /* ANMessageModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,10 +306,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50FB32271E5DF8B900219425 /* ANMessageBaseCell.m in Sources */,
 				5024BD3C1E5BFCF90033F65B /* ANNavigationController.m in Sources */,
+				50FB32321E5E21D200219425 /* UIImage+ANExt.m in Sources */,
 				5024BD421E5C28D20033F65B /* ANChatViewController.m in Sources */,
+				50FB322F1E5DFB3C00219425 /* ANMessageModel.m in Sources */,
 				50FB32231E5DE8E900219425 /* UIColor+ANExt.m in Sources */,
 				5024BD381E5BF9780033F65B /* ANMainViewController.m in Sources */,
+				50FB322A1E5DFADF00219425 /* ANMessageTextCell.m in Sources */,
 				5024BD481E5C591A0033F65B /* ANChatInputView.m in Sources */,
 				505D54441E5AEA6C004D24CF /* AppDelegate.m in Sources */,
 				505D54411E5AEA6C004D24CF /* main.m in Sources */,

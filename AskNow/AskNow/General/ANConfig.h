@@ -15,3 +15,4 @@
 
 
 #import "UIColor+ANExt.h"
+#import "UIImage+ANExt.h"
