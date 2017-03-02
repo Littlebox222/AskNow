@@ -10,11 +10,13 @@
 
 #import "ANConfig.h"
 #import "ANMessageTextCell.h"
+#import "ANChatInputView.h"
 
 @interface ANChatViewController () <UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray<ANMessageModel *> *messageList;
+@property (nonatomic, strong) ANChatInputView *inputView;
 
 @end
 
@@ -31,7 +33,7 @@
     
     [self initDemoData];
     
-    CGRect tableViewFrame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 64);
+    CGRect tableViewFrame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 64 - SIZE_INPUTVIEW_HEIGHT);
     self.tableView = [[UITableView alloc] initWithFrame:tableViewFrame style:UITableViewStylePlain];
     self.tableView.backgroundColor = COLOR_VC_BACKGROUND;
     self.tableView.delegate = self;
@@ -41,6 +43,9 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     [self.view addSubview:_tableView];
+    
+    self.inputView = [[ANChatInputView alloc] initWithFrame:CGRectMake(0, tableViewFrame.size.height, self.view.frame.size.width, SIZE_INPUTVIEW_HEIGHT)];
+    [self.view addSubview:self.inputView];
 }
 
 - (void)didReceiveMemoryWarning {

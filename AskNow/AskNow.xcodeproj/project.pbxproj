@@ -18,6 +18,21 @@
 		505D544C1E5AEA6C004D24CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505D544B1E5AEA6C004D24CF /* Assets.xcassets */; };
 		505D544F1E5AEA6C004D24CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505D544D1E5AEA6C004D24CF /* LaunchScreen.storyboard */; };
 		505D545D1E5AEC57004D24CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505D545C1E5AEC57004D24CF /* UIKit.framework */; };
+		50D963D91E65927200777DD3 /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D963D81E65927200777DD3 /* iflyMSC.framework */; };
+		50D963DB1E65929700777DD3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D963DA1E65929700777DD3 /* CoreLocation.framework */; };
+		50D963DD1E6592A700777DD3 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D963DC1E6592A700777DD3 /* CoreTelephony.framework */; };
+		50D963DF1E6592B500777DD3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D963DE1E6592B500777DD3 /* AVFoundation.framework */; };
+		50D963E11E6592CA00777DD3 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D963E01E6592CA00777DD3 /* AddressBook.framework */; };
+		50D963E31E6592D200777DD3 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D963E21E6592D200777DD3 /* Contacts.framework */; };
+		50D963E51E6592E100777DD3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D963E41E6592E100777DD3 /* AudioToolbox.framework */; };
+		50D963E71E6592F800777DD3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D963E61E6592F800777DD3 /* SystemConfiguration.framework */; };
+		50D963E91E65930600777DD3 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D963E81E65930600777DD3 /* libz.tbd */; };
+		50D963EB1E65931500777DD3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D963EA1E65931500777DD3 /* QuartzCore.framework */; };
+		50D963ED1E65931D00777DD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D963EC1E65931D00777DD3 /* Foundation.framework */; };
+		50D963EF1E65932800777DD3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D963EE1E65932800777DD3 /* CoreGraphics.framework */; };
+		50D963F11E65936600777DD3 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D963F01E65936600777DD3 /* libc++.tbd */; };
+		50D963F61E659A9400777DD3 /* ISRDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D963F51E659A9400777DD3 /* ISRDataHelper.m */; };
+		50D963FA1E65AAAA00777DD3 /* SCSiriWaveformView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D963F91E65AAAA00777DD3 /* SCSiriWaveformView.m */; };
 		50FB32231E5DE8E900219425 /* UIColor+ANExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FB32221E5DE8E900219425 /* UIColor+ANExt.m */; };
 		50FB32271E5DF8B900219425 /* ANMessageBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FB32261E5DF8B900219425 /* ANMessageBaseCell.m */; };
 		50FB322A1E5DFADF00219425 /* ANMessageTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FB32291E5DFADF00219425 /* ANMessageTextCell.m */; };
@@ -46,6 +61,23 @@
 		505D544E1E5AEA6C004D24CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		505D54501E5AEA6C004D24CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		505D545C1E5AEC57004D24CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		50D963D81E65927200777DD3 /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iflyMSC.framework; path = AskNow/Frameworks/iflyMSC.framework; sourceTree = "<group>"; };
+		50D963DA1E65929700777DD3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		50D963DC1E6592A700777DD3 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		50D963DE1E6592B500777DD3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		50D963E01E6592CA00777DD3 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		50D963E21E6592D200777DD3 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		50D963E41E6592E100777DD3 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		50D963E61E6592F800777DD3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		50D963E81E65930600777DD3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		50D963EA1E65931500777DD3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		50D963EC1E65931D00777DD3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		50D963EE1E65932800777DD3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		50D963F01E65936600777DD3 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		50D963F41E659A9400777DD3 /* ISRDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISRDataHelper.h; sourceTree = "<group>"; };
+		50D963F51E659A9400777DD3 /* ISRDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISRDataHelper.m; sourceTree = "<group>"; };
+		50D963F81E65AAAA00777DD3 /* SCSiriWaveformView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSiriWaveformView.h; sourceTree = "<group>"; };
+		50D963F91E65AAAA00777DD3 /* SCSiriWaveformView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSiriWaveformView.m; sourceTree = "<group>"; };
 		50FB32211E5DE8E900219425 /* UIColor+ANExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ANExt.h"; sourceTree = "<group>"; };
 		50FB32221E5DE8E900219425 /* UIColor+ANExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ANExt.m"; sourceTree = "<group>"; };
 		50FB32251E5DF8B900219425 /* ANMessageBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANMessageBaseCell.h; sourceTree = "<group>"; };
@@ -63,6 +95,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50D963F11E65936600777DD3 /* libc++.tbd in Frameworks */,
+				50D963EF1E65932800777DD3 /* CoreGraphics.framework in Frameworks */,
+				50D963ED1E65931D00777DD3 /* Foundation.framework in Frameworks */,
+				50D963EB1E65931500777DD3 /* QuartzCore.framework in Frameworks */,
+				50D963E91E65930600777DD3 /* libz.tbd in Frameworks */,
+				50D963E71E6592F800777DD3 /* SystemConfiguration.framework in Frameworks */,
+				50D963E51E6592E100777DD3 /* AudioToolbox.framework in Frameworks */,
+				50D963E31E6592D200777DD3 /* Contacts.framework in Frameworks */,
+				50D963E11E6592CA00777DD3 /* AddressBook.framework in Frameworks */,
+				50D963DF1E6592B500777DD3 /* AVFoundation.framework in Frameworks */,
+				50D963DD1E6592A700777DD3 /* CoreTelephony.framework in Frameworks */,
+				50D963DB1E65929700777DD3 /* CoreLocation.framework in Frameworks */,
+				50D963D91E65927200777DD3 /* iflyMSC.framework in Frameworks */,
 				505D545D1E5AEC57004D24CF /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,6 +215,19 @@
 		505D545B1E5AEC57004D24CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				50D963F01E65936600777DD3 /* libc++.tbd */,
+				50D963EE1E65932800777DD3 /* CoreGraphics.framework */,
+				50D963EC1E65931D00777DD3 /* Foundation.framework */,
+				50D963EA1E65931500777DD3 /* QuartzCore.framework */,
+				50D963E81E65930600777DD3 /* libz.tbd */,
+				50D963E61E6592F800777DD3 /* SystemConfiguration.framework */,
+				50D963E41E6592E100777DD3 /* AudioToolbox.framework */,
+				50D963E21E6592D200777DD3 /* Contacts.framework */,
+				50D963E01E6592CA00777DD3 /* AddressBook.framework */,
+				50D963DE1E6592B500777DD3 /* AVFoundation.framework */,
+				50D963DC1E6592A700777DD3 /* CoreTelephony.framework */,
+				50D963DA1E65929700777DD3 /* CoreLocation.framework */,
+				50D963D81E65927200777DD3 /* iflyMSC.framework */,
 				505D545C1E5AEC57004D24CF /* UIKit.framework */,
 			);
 			name = Frameworks;
@@ -187,9 +245,38 @@
 			path = Chat;
 			sourceTree = "<group>";
 		};
+		50D963F21E659A9400777DD3 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				50D963F71E65AAAA00777DD3 /* SCSiriWaveformView */,
+				50D963F31E659A9400777DD3 /* ISR */,
+			);
+			name = ThirdParty;
+			path = AskNow/General/ThirdParty;
+			sourceTree = SOURCE_ROOT;
+		};
+		50D963F31E659A9400777DD3 /* ISR */ = {
+			isa = PBXGroup;
+			children = (
+				50D963F41E659A9400777DD3 /* ISRDataHelper.h */,
+				50D963F51E659A9400777DD3 /* ISRDataHelper.m */,
+			);
+			path = ISR;
+			sourceTree = "<group>";
+		};
+		50D963F71E65AAAA00777DD3 /* SCSiriWaveformView */ = {
+			isa = PBXGroup;
+			children = (
+				50D963F81E65AAAA00777DD3 /* SCSiriWaveformView.h */,
+				50D963F91E65AAAA00777DD3 /* SCSiriWaveformView.m */,
+			);
+			path = SCSiriWaveformView;
+			sourceTree = "<group>";
+		};
 		50FB321F1E5DE89200219425 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				50D963F21E659A9400777DD3 /* ThirdParty */,
 				50FB32201E5DE8AA00219425 /* Category */,
 			);
 			path = Utility;
@@ -306,6 +393,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50D963F61E659A9400777DD3 /* ISRDataHelper.m in Sources */,
 				50FB32271E5DF8B900219425 /* ANMessageBaseCell.m in Sources */,
 				5024BD3C1E5BFCF90033F65B /* ANNavigationController.m in Sources */,
 				50FB32321E5E21D200219425 /* UIImage+ANExt.m in Sources */,
@@ -317,6 +405,7 @@
 				5024BD481E5C591A0033F65B /* ANChatInputView.m in Sources */,
 				505D54441E5AEA6C004D24CF /* AppDelegate.m in Sources */,
 				505D54411E5AEA6C004D24CF /* main.m in Sources */,
+				50D963FA1E65AAAA00777DD3 /* SCSiriWaveformView.m in Sources */,
 				5024BD3F1E5BFD280033F65B /* ANViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +525,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZB5CR5DXHJ;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AskNow/Frameworks",
+				);
 				INFOPLIST_FILE = AskNow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.xmxue.AskNow;
@@ -448,6 +542,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZB5CR5DXHJ;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AskNow/Frameworks",
+				);
 				INFOPLIST_FILE = AskNow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.xmxue.AskNow;

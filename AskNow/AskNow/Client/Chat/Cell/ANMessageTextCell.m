@@ -12,8 +12,8 @@
 //Label的约束
 #define LABEL_BUBBLE_LEFT 12
 #define LABEL_BUBBLE_RIGHT 12
-#define LABEL_BUBBLE_TOP 14
-#define LABEL_BUBBLE_BOTTOM 12
+#define LABEL_BUBBLE_TOP 18
+#define LABEL_BUBBLE_BOTTOM 8
 
 #define CONTENT_MIN_WIDTH  53
 #define CONTENT_MIN_HEIGHT 41
@@ -99,6 +99,7 @@
                                              CGRectGetMinY(self.bubbleImageView.frame) + LABEL_BUBBLE_TOP + BUBBLE_TOP_BLANK,
                                              textSize.width,
                                              textSize.height);
+        self.contentLabel.textColor = UIColorRGB(159, 159, 159);
         
     }else {
         self.bubbleImageView.frame = CGRectMake(CONTENT_LEFT_MARGIN,
@@ -110,6 +111,7 @@
                                              CGRectGetMinY(self.bubbleImageView.frame) + LABEL_BUBBLE_TOP + BUBBLE_TOP_BLANK,
                                              textSize.width,
                                              textSize.height);
+        self.contentLabel.textColor = UIColorRGB(45, 45, 45);
     }
     
 }

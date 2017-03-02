@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ANConfig.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    NSString *initString = [[NSString alloc] initWithFormat:@"appid=%@", kIFlyAppId];
+    [IFlySpeechUtility createUtility:initString];
+    
     return YES;
 }
 
