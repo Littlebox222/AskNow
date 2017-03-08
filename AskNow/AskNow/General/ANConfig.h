@@ -24,6 +24,12 @@
 
 #define kIFlyAppId @"58aa983a"
 
+
+
+#define SAFE_SEND_MESSAGE(obj, msg) if ((obj) && [(obj) respondsToSelector:@selector(msg)])
+
+
+
 #endif /* ANConfig_h */
 
 

@@ -8,8 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol ANChatInputViewDelegate <NSObject>
+
+- (void)sendTextMessage:(NSString *)text;
+
+@end
+
 @interface ANChatInputView : UIView
 
-
+@property (nonatomic, weak) id<ANChatInputViewDelegate> delegate;
 
 @end

@@ -13,6 +13,8 @@
 
 #define WEAK_SELF __weak typeof(self) weakSelf = self
 
+#define DEBUG 0
+
 @interface ANChatInputView () <IFlySpeechRecognizerDelegate>
 
 @property (nonatomic, strong) UIButton *voiceButton;
@@ -66,10 +68,15 @@
 - (void)voiceButtonTouchDown {
     NSLog(@"voiceButtonTouchDown");
     
-    [_iFlySpeechRecognizer cancel];
+    if (DEBUG) {
+        [_iFlySpeechRecognizer cancel];
+    }
+    
     self.voiceString = @"";
     
-//    [_iFlySpeechRecognizer startListening];
+    if (DEBUG) {
+        [_iFlySpeechRecognizer startListening];
+    }
     
 //    [self.waveformView setHidden:NO];
     [UIView beginAnimations:nil context:nil];
@@ -82,7 +89,9 @@
 - (void)voiceButtonTouchUpInside {
     NSLog(@"voiceButtonTouchUpInside");
     
-    [_iFlySpeechRecognizer stopListening];
+    if (DEBUG) {
+        [_iFlySpeechRecognizer stopListening];
+    }
     
     [self.waveformView updateWithLevel:0];
     
@@ -96,7 +105,11 @@
 
 - (void)voiceButtonTouchUpOutside {
     NSLog(@"voiceButtonTouchUpOutside");
-    [_iFlySpeechRecognizer cancel];
+    
+    if (DEBUG) {
+        [_iFlySpeechRecognizer cancel];
+    }
+    
     [self.waveformView updateWithLevel:0];
     
     [UIView beginAnimations:nil context:nil];
@@ -131,7 +144,9 @@
         NSLog(@"\n\n\n\n\n");
         
         if (self.voiceString.length>0) {
-            
+            SAFE_SEND_MESSAGE(self.delegate, sendTextMessage:) {
+                [self.delegate sendTextMessage:self.voiceString];
+            }
         }else{
             NSLog(@"未检测到");
         }
